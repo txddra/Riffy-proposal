@@ -8,16 +8,39 @@
 
 
 let input = getInput(0)
-
-function convert(num){;
-    // let measurement = ''
-return num * 2.54 
-}
+let input2 =getInput(1)
 
 let sentence = " converted is:"
-let result = input + "cm " + sentence + " " + convert(input) + ' inches'
+let converted = "";
+let result = input + input2 + sentence + " " + convert(input, input2) + converted
+ 
 
+
+function convert(num, measurement){;
+    // let measurement = ''
+
+if( measurement === 'cm'){
+    converted = "inches"
+    return num * 2.54 ;
+}
+else if (measurement === 'in'){
+    converted = "cm"
+    return num / 2.54
+}
+// else if(){
+
+}
+
+
+
+if(input === undefined){
+   console.log( 'please input a number for conversion')
+}else{
 console.log(result)
+}
+
+
+
 
 
 
