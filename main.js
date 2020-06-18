@@ -14,8 +14,8 @@ function convert(num){;
 return num * 2.54 
 }
 
-let sentence = " converted to inches is:"
-let result = input + " " + sentence + " " + convert(input)
+let sentence = " converted is:"
+let result = input + "cm " + sentence + " " + convert(input) + ' inches'
 
 console.log(result)
 
@@ -39,3 +39,4 @@ console.log(result)
 
 function getInput(n) {
     return process.argv[n + 2];
+}
