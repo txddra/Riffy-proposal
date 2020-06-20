@@ -25,12 +25,17 @@ if( measurement === 'cm'){
 }
 else if (measurement === 'in'){
     converted = "cm"
-    return num / 2.54
+    return num / 2.54;
 }
-// else if(){
-
+else if(measurement === 'feet'){
+converted = "inches"
+return num * 12;
 }
-
+else if (measurement ==='inches'){
+converted = "feet"
+return num / 12
+}
+}
 
 
 if(input === undefined){
